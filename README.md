@@ -19,7 +19,7 @@ It's necessary to install Docker previously.
 **Obs.: The follow instructions were tested on macOS Mojave version 10.14.6**
 
 1 - Unzip file nubank on your directory path:
-  - user@user:~/home/$ **unzip nubank.zip -d /path/to/directory**
+  - user@user:~/home/$ **unzip nubank-challenge.zip -d /path/to/directory**
 
 2 - Run docker command to create nubank image:
   - use@user:~/home/path/to/directory/$ **docker build -t [YOUR-IMAGE-NAME] -f Dockerfile .**
