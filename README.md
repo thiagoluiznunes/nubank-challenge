@@ -26,6 +26,19 @@ It's necessary to install Docker previously.
 
 3 - Running docker image passing OPERATIONS as param:
   - use@user:~/home/path/to/directory/$ **cat [OPERATIONS-PATH] | docker run -i --rm [YOUR-IMAGE-NAME]**
+**Example:**
+```
+$  cat operations | docker run -i --rm nubank
+```
+  - use@user:~/home/path/to/directory/$ **docker run -i --rm [YOUR-IMAGE-NAME] go run main.go < [[OPERATIONS-PATH]**
+**Example:**
+```
+$  docker run -i --rm nubank go run main.go < operations
+```
 
 4 - Running tests
-  - use@user:~/home/path/to/directory/$ **go test ./test/... -count=1 -v**
+  - use@user:~/home/path/to/directory/$ **docker run -i --rm [YOUR-IMAGE-NAME] go test ./... -count=1 -v**
+**Example:**
+```
+$  docker run -i --rm nubank go test ./... -count=1 -v
+```

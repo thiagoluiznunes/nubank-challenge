@@ -13,4 +13,5 @@ RUN go mod download
 
 RUN go build -o bin/nubank main.go
 
-ENTRYPOINT [  "./bin/nubank" ]
+CMD [  "./bin/nubank" ]
+# ENTRYPOINT [  "./bin/nubank" ]
